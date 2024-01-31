@@ -1,0 +1,200 @@
+<%- include("partials/header.ejs") %>
+
+<!-- The Hero -->
+<section class="quell-quote d-block">
+  <div
+    class="row flex-lg-row-reverse align-items-center g-5 shadow-lg hero mt-0"
+  >
+    <div
+      class="slogan-container row flex-lg-row justify-content-md-between padding-left"
+    >
+      <span class="material-symbols-outlined col-lg-1 me-2">
+        self_improvement
+      </span>
+      <div class="slogan col mt-2 py-0">
+        <h2>Where Your Wellbeing Belongs</h2>
+        <p>Quotes for a Balanced Life: Nourishing Your Mind and Spirit.</p>
+      </div>
+    </div>
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="images/20 Reminders for Every College Student.jpg"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Wellbeing"
+        height="1200"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6 ps-0">
+      <div class="hero-q ps-5">
+        <h1 class="display-5 lh-1">
+          "Radiate postivity from within, and let your inner light guide your
+          path"
+        </h1>
+        <div>
+          <p class="lead mb-3">
+            Subscibe to our enriching blog for a journey of inspiration and
+            self-discovery.
+          </p>
+          <div class="emailForm">
+            <form action="/subscribe" method="post">
+              <label for="userEmail">Email*</label>
+              <input
+                type="email"
+                name="userEmail"
+                id="userEmail"
+                placeholder="email@email.com"
+              />
+              <button type="submit" data-target="#modal">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div
+  class="modal modal-sheet p-4 py-md-5 d-none"
+  tabindex="-1"
+  role="dialog"
+  id="modalChoice"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-3 shadow">
+      <div class="modal-body p-4 text-center">
+        <button
+          type="button"
+          class="btn-close float-end"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <h3 class="mb-0">You have subscribed to our blog.</h3>
+        <p class="mb-0">
+          You will recieve emails about the recent quotes and posts.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Posts -->
+<section class="quell-quote">
+  <h2 class="Recent-Quotes text-center display-2 my-3">Recent Quotes</h2>
+  <div
+    class="container marketing mt-5 border-bottom border-opacity-100 border-danger-subtle border-2"
+  >
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div
+        class="d-flex flex-column align-items-center col-lg-4 justify-content-md-center"
+      >
+        <img
+          src="images/Social Well Being.jpg"
+          alt="Spiritual Wellness"
+          class="rounded-circle"
+          width="140"
+          height="140"
+        />
+        <h2 class="fw-normal"><%= quotes[quotes.length-3].genere %></h2>
+        <blockquote class="blockquote">
+          <p><%= quotes[quotes.length-3].quoteBody %></p>
+        </blockquote>
+
+        <cite class="float-end align-self-end mt-0 mb-5" title="Source Title"
+          ><%= quotes[quotes.length-3].author %></cite
+        >
+      </div>
+      <!-- /.col-lg-4 -->
+      <div
+        class="d-flex flex-column align-items-center col-lg-4 justify-content-md-center"
+      >
+        <img
+          src="images/Spirtual Wellness.jpg"
+          alt="Spiritual Wellness"
+          class="rounded-circle"
+          width="140"
+          height="140"
+        />
+        <h2 class="fw-normal"><%= quotes[quotes.length-2].genere %></h2>
+        <blockquote class="blockquote">
+          <p><%= quotes[quotes.length-2].quoteBody %></p>
+        </blockquote>
+
+        <cite class="float-end align-self-end mt-0 mb-5" title="Source Title"
+          ><%= quotes[quotes.length-2].author %></cite
+        >
+      </div>
+      <!-- /.col-lg-4 -->
+      <div
+        class="d-flex flex-column align-items-center col-lg-4 justify-content-md-center"
+      >
+        <img
+          src="images/Happiness.jpg"
+          alt="Spiritual Wellness"
+          class="rounded-circle"
+          width="140"
+          height="140"
+        />
+        <h2 class="fw-normal"><%= quotes[quotes.length-1].genere %></h2>
+        <blockquote class="blockquote">
+          <p><%= quotes[quotes.length-1].quoteBody %></p>
+        </blockquote>
+
+        <cite class="float-end align-self-end mt-0 mb-5" title="Source Title"
+          ><%= quotes[quotes.length-1].author %></cite
+        >
+      </div>
+    </div>
+    <p><a class="btn btn-secondary" href="/blog.ejs">More Quotes »</a></p>
+  </div>
+</section>
+
+<!-- About Me -->
+<section class="quell-quote">
+  <div
+    class="about-me row p-2 pb-lg-5 pe-lg-0 pt-lg-5 d-flex align-items-center rounded-3 border shadow-lg mt-1"
+  >
+    <div class="my-pic col-lg-4 p-0 overflow-hidden shadow-lg">
+      <img
+        class="rounded-4 float-end"
+        src="images/pic of me.png"
+        alt=""
+        width="300"
+        height="400px"
+      />
+    </div>
+    <div class="texter col-lg-7 p-3 p-lg-5 pt-lg-3 ms-lg-5">
+      <h1 class="display-4 lh-1">Meet <br />Abdelrahman T. Shear</h1>
+      <p class="lead mt-2">
+        Hello there! As a passionate builder of digital spaces, I've crafted
+        this platform to make your online well-being experience both delightful
+        and inspiring!
+      </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start my-4 mb-lg-3">
+        <a type="button" class="btn btn-lg px-4 me-md-2" href="/aboutMe.ejs">
+          Learn more
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Jumptroon -->
+<section class="quell-quote">
+  <div class="jumptroon container py-5 mt-1 text-center">
+    <img
+      src="images/SVG for well being.png"
+      class="svg mx-auto"
+      alt="Svg well being"
+      height="200"
+    />
+    <div>
+      <h2>“Our bodies are our gardens – our wills are our gardeners.”</h2>
+      <p class="col-lg-8 ms-auto lead">- William Shakespeare</p>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

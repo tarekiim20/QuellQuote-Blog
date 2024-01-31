@@ -1,0 +1,95 @@
+<%- include("partials/header.ejs") %>
+<section class="blog-all">
+  <div class="all-quotes d-inline-block">
+    <h1 class="col-md-12 text-center my-5" hight="auto">
+      All QUOTES <br /><a
+        href="/new"
+        class="btn btn-danger1 me-3 d-block float-end"
+        >Create New Quote</a
+      >
+    </h1>
+    <div class="d-flex row gap-3">
+      <% quotes.forEach(quote => { %>
+      <div
+        class="quote-body col-md-5 row g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+      >
+        <strong class="d-inline-block mx-md-4 mt-3 auto-fit"
+          ><%= quote.genere %></strong
+        >
+        <div
+          class="col p-4 d-flex flex-column position-static align-self-center"
+        >
+          <h3 class="mb-0"><%= quote.author %></h3>
+          <div class="mb-1 d-flex justify-content-between text-body-primary">
+            <div class="d-flex gap-3 justify-content-between py-md-0">
+              <span><%= quote.date %></span>
+              <span>likes: 1</span>
+              <span>views: </span>
+            </div>
+            <div class="like-button btn-group">
+              <button
+                type="button"
+                class="btn btn-danger1"
+                data-bs-toggle="button"
+              >
+                Like ♡
+              </button>
+            </div>
+          </div>
+
+          <p class="card-text mb-auto my-4"><%= quote.quoteBody %></p>
+        </div>
+        <div class="col-auto d-none d-lg-block me-1">
+          <a
+            href="/blog.ejs/<%= quote.id %>"
+            class="icon-link gap-0 icon-link-hover"
+          >
+            <% randomNumber = Math.floor(Math.random()*8) %>
+            <img
+              src="images/<%= randomNumber %>.jpg"
+              class="rounded d-inline-block"
+              alt="coffee and window"
+              width="auto"
+              height="600"
+              role="img"
+              focusable="false"
+            />
+          </a>
+        </div>
+        <div class="col-md-12 mb-3">
+          <a
+            href="/blog.ejs/<%= quote.id %>"
+            class="btn btn-primary1 text-white ms-2"
+          >
+            Continue reading »
+          </a>
+          <a href="/blog.ejs/edit/<%= quote.id %>" class="btn btn-danger1"
+            >Edit</a
+          >
+          <form
+            action="/delete/<%= quote.id %>?_method=DELETE"
+            method="post"
+            class="d-inline-block"
+          >
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+<script src="https://unpkg.com/sharect@2.0.0/dist/sharect.js"></script>
+<script>
+  Sharect.config({
+    facebook: true,
+    twitter: true,
+    twitterUsername: "estevanmaito",
+    backgroundColor: "#de561f",
+    iconColor: "#FFF",
+    selectableElements: ["p"],
+  }).init();
+</script>
+<script src="blog.js"></script>
+
+<%- include("partials/footer.ejs") %>

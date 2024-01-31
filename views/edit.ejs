@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+<h1 class="display-3 text-emphasis-primary bg-secondary-subtle mb-0">
+  Edit your quote!
+</h1>
+<form
+  action="/blog.ejs/edit/random?_method=PUT"
+  method="post"
+  class="form-group createNewQuote bg-secondary-subtle"
+>
+  <%- include("partials/forum_shape.ejs") %>
+</form>
+
+<%- include("partials/footer.ejs") %>

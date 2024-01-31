@@ -1,0 +1,60 @@
+<div class="container ms-3 fs-2 text-emphasis-secondary mb-3">
+  <label for="newQuoteGenere" class="form-label">Quote genere</label>
+  <input
+    value="<%= quotes.genere %>"
+    required
+    type="text"
+    name="newQuoteGenere"
+    id="newQuoteGenere"
+    class="form-control"
+    placeholder="Ex: Well-Being"
+  />
+</div>
+<div class="container ms-3 text-body-primary fs-2 text-emphasis-secondary mb-3">
+  <label for="newQuoteAuthor" class="form-label">Quote author</label>
+  <input
+    value="<%= quotes.author %>"
+    required
+    type="text"
+    name="newQuoteAuthor"
+    id="newQuoteAuthor"
+    class="form-control"
+    placeholder="Ex: Opperah Winfery"
+  />
+</div>
+<div class="container ms-3 text-body-primary fs-2 text-emphasis-secondary mb-3">
+  <label for="newQuoteDate" class="form-label">Date of the quote</label>
+  <input
+    type="date"
+    name="newQuoteDate"
+    id="newQuoteDate"
+    class="form-control"
+    placeholder="Nov , 2030"
+  />
+</div>
+<div class="container ms-3 text-body-primary fs-2 text-emphasis-secondary mb-3">
+  <label for="newQuoteBody" class="form-label">Quote body</label>
+  <textarea
+    required
+    name="newQuoteBody"
+    id="newQuoteBody"
+    class="form-control"
+    placeholder="Write your quote here"
+  >
+<%= quotes.quoteBody %></textarea
+  >
+</div>
+<div class="container ms-3 text-body-primary fs-2 text-emphasis-secondary">
+  <label for="newQuoteID" class="form-label">Write an ID for your quote</label>
+  <input
+    required
+    value="<%= quotes.id %>"
+    type="number"
+    name="newQuoteID"
+    id="newQuoteID"
+    class="form-control"
+    placeholder="Don't change that number if you are editing the quote!"
+  />
+</div>
+<a href="/blog.ejs" class="btn btn-secondary ms-4 mt-4">Cancel</a>
+<button type="submit" class="btn btn-primary ms-2 mt-4">Save</button>

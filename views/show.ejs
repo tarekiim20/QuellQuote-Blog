@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+<section class="bg-secondary-subtle" height="100%">
+  <h1 class="mb-1 display-4 text-emphasis-primary"><%= quotes.genere %></h1>
+  <p class="text-muted fs-4"><%= quotes.date %></p>
+  <figure class="my-4">
+    <blockquote class="blockquote">
+      <p class="fs-2"><%= quotes.quoteBody %></p>
+    </blockquote>
+    <cite title="Source Title" class="fs-3 ms-5 text-body-secondary"
+      ><%= quotes.author %></cite
+    >
+  </figure>
+  <div class="mt-4 ms-2">
+    <a href="/blog.ejs" class="btn btn-primary">All blogs</a>
+    <a href="/blog.ejs/edit/<%= quotes.id %>" class="btn btn-secondary">Edit</a>
+  </div>
+</section>
+
+<%- include("partials/footer.ejs") %>

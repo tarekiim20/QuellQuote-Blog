@@ -1,0 +1,473 @@
+title {
+  color: #82aed1;
+  color: #d3d3d3;
+  color: #a8c7b8;
+  color: #ffa07a;
+  color: #b19cd9;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+header {
+  background-color: #d3d3d3c0;
+  font-family: "Abril Fatface", serif;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: #ffa07a;
+}
+
+.nav {
+  --bs-nav-link-hover-color: black;
+}
+
+.logo {
+  font-family: "Chakra Petch", sans-serif;
+  color: #de561f;
+  font-weight: bolder;
+}
+
+.hero {
+  background-color: #d3d3d3;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-size: 75px;
+  color: #82aed1;
+  padding: 0%;
+}
+
+.margin-bot {
+  margin-bottom: 200px;
+}
+
+.padding-left {
+  margin-left: 0px;
+}
+.slogan-container {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  width: 60%;
+}
+@media (max-width: 1100px) {
+  .slogan-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #d3d3d3;
+    margin-bottom: 10px;
+  }
+}
+.slogan > h2 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #b19cd9;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+.slogan > p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #b19cd9;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.hero-q > h1 {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-kerning: auto;
+  font-weight: lighter;
+  font-stretch: expanded;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
+}
+
+.hero-q div p {
+  font-family: "Chakra Petch", sans-serif;
+  color: black;
+  font-size: 20px;
+  letter-spacing: -1px;
+  width: 400px;
+}
+
+.emailForm {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.emailForm label {
+  display: block;
+  color: #de561f;
+  font-weight: bold;
+}
+
+.emailForm button {
+  background-color: #d3d3d3;
+  color: #de561f;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border: 2px solid #de551f8c;
+  border-radius: 15px;
+  margin-left: 7.5px;
+  transition: 0.3s ease;
+}
+
+.emailForm button:hover {
+  background-color: #de561f;
+  color: #d3d3d3;
+  border: 5px solid #d3d3d3;
+  transform: scale(1.1);
+}
+
+.emailForm button:active {
+  transform: translateY(4px);
+  color: #d3d3d3a9;
+}
+
+.emailForm input {
+  width: 350px;
+  border: 3px solid #de561f;
+}
+
+#modalChoice {
+  display: inline-block;
+  position: absolute;
+  left: 300px;
+  top: 600px;
+  height: auto;
+  width: 50%;
+  z-index: 1;
+  background-color: #00ffff00;
+}
+
+.modal-body {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+figcaption {
+  margin-left: 150px;
+}
+
+.Recent-Quotes {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+}
+.container a {
+  background-color: #d3d3d3;
+  color: #de561f;
+  font-weight: bolder;
+  font-family: "Chakra Petch", sans-serif;
+  border: 2px solid #de561f;
+}
+.container p {
+  text-align: center;
+}
+
+.container a:hover {
+  background-color: #de561f;
+  color: #d3d3d3;
+  border: 2px solid #d3d3d3;
+}
+
+.container div blockquote {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+.container div h2 {
+  font-family: "Abril Fatface", serif;
+}
+.my-pic {
+  width: auto;
+  margin-left: 150px;
+}
+
+@media (max-width: 1000px) {
+  .my-pic {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.texter {
+  margin-left: auto;
+}
+
+.about-me {
+  background-color: #d3d3d3;
+}
+
+.about-me div h1 {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.about-me div h1 {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-size: 60px;
+  font-weight: lighter;
+}
+.about-me div p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 20px;
+  color: black;
+  letter-spacing: -1.4px;
+  width: 85%;
+}
+
+.about-me div div a {
+  background-color: #82aed1;
+  font-family: "Chakra Petch", sans-serif;
+  color: #de5 61f;
+  border: 2px solid #de561f;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.about-me div div a:hover {
+  background-color: #de561f;
+  color: #82aed1;
+  border: 2px solid #82aed1;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.jumptroon div h2 {
+  opacity: 0;
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: lighters;
+}
+
+.jumptroon img.svg {
+  opacity: 0;
+  background-image: url("images/png for background.png");
+  background-size: 110px;
+  background-repeat: no-repeat;
+  background-position-y: 5.5em;
+  background-position-x: 2em;
+}
+
+.jumptroon div p {
+  opacity: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.5rem;
+  text-align: end;
+  color: #82aed1;
+  margin-right: 0;
+}
+footer {
+  background-color: #d3d3d3c0;
+}
+footer p {
+  font-family: "Abril Fatface", serif;
+  font-size: 1.5rem;
+  color: #de561f;
+  margin-left: 20px;
+  font-weight: lighter;
+}
+
+footer form h4 {
+  font-size: 1.25rem;
+  font-family: "Chakra Petch", sans-serif;
+  color: #de561f;
+  font-weight: bolder;
+  font-stretch: condensed;
+  letter-spacing: -0.5px;
+}
+
+footer form label {
+  display: block;
+  color: #82aed1;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+footer form input {
+  border: 2px solid #de561f;
+  font-family: "Chakra Petch", sans-serif;
+  margin-top: auto;
+  width: 65%;
+  color: #de561f;
+  font-weight: bolder;
+}
+
+footer form button {
+  background-color: #de561f;
+  color: #82aed1;
+  font-weight: bolder;
+  border: 2px solid #82aed1;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  width: auto;
+  font-size: 0.9rem;
+}
+
+footer form button:hover {
+  background-color: #82aed1;
+  border: 2px solid #de561f;
+  color: #de561f;
+  transform: translateY(10px);
+}
+
+.social-links li a svg {
+  color: #82aed1;
+  font-weight: bolder;
+  transition: ease;
+}
+
+.social-links li a svg:hover {
+  transform: rotate(10deg) scale(1.3);
+}
+
+.blog-all {
+  background-color: #d3d3d3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.all-quotes h1 {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-size: 3rem;
+  font-stretch: ultra-expanded;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+.quote-body {
+  border: 2px solid #de561f;
+  border-radius: 5px;
+  font-family: "Chakra Petch", sans-serif;
+  opacity: 0;
+  animation: fadeInUp 2s forwards cubic-bezier(0.87, 0, 0.13, 1);
+}
+.quote-body strong {
+  font-size: 1.8rem;
+  font-family: "Chakra Petch", sans-serif;
+  color: #a77cf7;
+  font-weight: bolder;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.quote-body div h3 {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-size: 2.5rem;
+}
+
+.quote-body div img {
+  border: 2px solid #a77cf7;
+  margin-bottom: 25px;
+}
+
+.quote-body div.col-auto {
+  align-self: center;
+}
+.quote-body .card-text {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  width: 85%;
+}
+.btn-danger1 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #a77cf7;
+  --bs-btn-border-color: #a77cf7;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #7c45e3;
+  --bs-btn-hover-border-color: #7c45e3;
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #7c45e3;
+  --bs-btn-active-border-color: #7c45e3;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #a77cf7;
+  --bs-btn-disabled-border-color: #a77cf7;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-hover-bg: #a77cf7;
+}
+
+.quote-body div a {
+  color: #7c45e3;
+  font-weight: bolder;
+  text-decoration-color: #7c45e3, var(--bs-link-opacity, 0.5);
+  text-underline-offset: 0.35rem;
+}
+
+.quote-body div a:hover {
+  opacity: 0.5;
+}
+
+.btn-primary1 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #de561f;
+  --bs-btn-border-color: #de561f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #e75f28;
+  --bs-btn-hover-border-color: #e75f28;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #e5490a;
+  --bs-btn-active-border-color: #e75f28;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #e75f28;
+  --bs-btn-disabled-border-color: #e75f28;
+}
+
+.aboutMe div h1,
+.aboutMe div h2 {
+  font-family: "Abril Fatface", serif;
+  color: #de561f;
+  font-size: 3rem;
+}
+
+.aboutMe a {
+  width: fit-content;
+  height: fit-content;
+}
+
+.aboutMe form {
+  height: 350px;
+}
+
+p::selection {
+  background-color: #a77cf7;
+}
